@@ -1,4 +1,5 @@
 import React from 'react';
+import Cart from './Cart';
 
 const Header = (props)=> {
     return (
@@ -17,7 +18,12 @@ const Header = (props)=> {
                 <li className="nav-item">
                     <a className="nav-link" href="#">Link</a>
                 </li>
-                <li className="nav-item dropdown">
+                <li className="nav-item">
+                    <Cart cartCount={props.cartCount}/>
+                </li>
+
+
+                {/* <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
                     </a>
@@ -30,7 +36,7 @@ const Header = (props)=> {
                 </li>
                 <li className="nav-item">
                     <a className="nav-link disabled" href="#"  aria-disabled="true">Disabled</a>
-                </li>
+                </li> */}
                 </ul>
                 
             </div>
