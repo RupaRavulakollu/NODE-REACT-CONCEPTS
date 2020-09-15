@@ -10,7 +10,7 @@ import ProductList from './components/ProductList';
 
 export class App extends Component {
 
-  //const API_KEY="18264779-9a0913573ba0b91a0fcabbc74";
+  
   //const API_KEY = "API_KEY";  
   constructor(){
     super();
